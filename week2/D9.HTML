@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        
+
+        .grid-section {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            /* 2-2 cols & 1fr-fraction of availablr space*/
+            gap: 20px;
+            padding: 2rem;
+            /* Relative to root  */
+        }
+
+        .box {
+            background-color: lightblue;
+            padding: 2rem;
+            text-align: center;
+            font-size: 1.5rem;
+        }
+        @media (max-width: 600px) {
+            .grid-section {
+                grid-template-columns: 1fr; /* when screen is smaller move to 1 col */
+            }
+        }
+    </style>
+</head>
+<!-- Flexbox → arrange items in a line
+
+Grid → arrange items in rows + columns
+
+px → fixed
+
+rem → scalable
+
+% → relative to parent -->
+
+<body>
+    <div class="grid-section">
+        <div class="box">1</div>
+        <div class="box">2</div>
+        <div class="box">3</div>
+        <div class="box">4</div>
+
+    </div>
+
+</body>
+
+</html>

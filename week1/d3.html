@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>D3</title>
+</head>
+<!-- semantic grouping (div, fieldset, footer) and CSS for spacing. -->
+<body>
+  <main>
+    <form>
+      <!-- Name fields -->
+      <div>
+        <label for="fname">First name</label>
+        <input type="text" id="fname" name="fname" required />
+      </div>
+
+      <div>
+        <label for="lname">Last name</label>
+        <input type="text" id="lname" name="lname" required />
+      </div>
+
+      <!-- Gender -->
+      <fieldset>
+        <legend>Gender</legend>
+
+        <input type="radio" id="gender-female" name="gender" value="female" />
+        <label for="gender-female">Female</label>
+
+        <input type="radio" id="gender-male" name="gender" value="male" />
+        <label for="gender-male">Male</label>
+      </fieldset>
+
+      <!-- Vehicles -->
+      <fieldset>
+        <legend>Vehicles owned</legend>
+
+        <input type="checkbox" id="v1" name="v1" value="bike" />
+        <label for="v1">I have a bike</label>
+
+        <input type="checkbox" id="v2" name="v2" value="car" />
+        <label for="v2">I have a car</label>
+
+        <input type="checkbox" id="v3" name="v3" value="boat" />
+        <label for="v3">I have a boat</label>
+      </fieldset>
+
+      <footer>
+        <button type="submit">Submit form</button>
+      </footer>
+    </form>
+  </main>
+</body>
+</html>

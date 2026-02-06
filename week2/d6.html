@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Beginner CSS Page</title>
+
+  <style>
+    /* BODY = whole page */
+    body {
+      font-family: Arial, sans-serif;     /* text style */
+      background-color: #f5f5f5;          /* page background */
+      margin: 0;                          /* remove default space */
+    }
+
+    /* HEADER at top */
+    header {
+      background-color: #2563eb;          /* blue */
+      color: white;
+      padding: 16px;                      /* space inside */
+      text-align: center;
+    }
+
+    /* MAIN content area */
+    main {
+      padding: 20px;
+    }
+
+    /* Each section is a box */
+    section {
+      background-color: white;
+      margin-bottom: 20px;                /* space outside */
+      padding: 16px;                      /* space inside */
+      border-radius: 6px;                 /* rounded corners */
+    }
+
+    /* Form labels */
+    label {
+      display: block;                     /* label on its own line */
+      margin-bottom: 4px;
+      font-weight: bold;
+    }
+
+    /* Text inputs */
+    input[type="text"],
+    input[type="email"] {
+      width: 100%;
+      padding: 8px;
+      margin-bottom: 12px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+    }
+
+    /* Button style */
+    .btn {
+      background-color: #2563eb;
+      color: white;
+      padding: 10px 16px;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+
+    /* Button focus (keyboard users) ==Tab   */  
+    .btn:focus {
+      outline: 3px solid black;
+    }
+
+    /* Footer */
+    footer {
+      text-align: center;
+      padding: 12px;
+      background-color: #e5e7eb;
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- Semantic header -->
+  <header>
+    <h1>My First Styled Page</h1>
+  </header>
+
+  <!-- Main content -->
+  <main>
+
+    <!-- Section 1 -->
+    <section>
+      <h2>About</h2>
+      <p>
+        This page uses basic CSS for colors, spacing, and layout.
+      </p>
+    </section>
+
+    <!-- Section 2: Contact Form -->
+    <section>
+      <h2>Contact Form</h2>
+
+      <form>
+        <label for="name">Name</label>
+        <input type="text" id="name" name="name">
+
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email">
+
+        <button class="btn" type="submit">Send</button>
+      </form>
+    </section>
+
+  </main>
+
+  <!-- Semantic footer -->
+  <footer>
+    © 2026 My Website
+  </footer>
+
+</body>
+</html>
